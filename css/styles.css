@@ -781,7 +781,7 @@ h1,h2,h3,p{
 }
 .modal__checkbox__label{
     display: flex;
-    align-items: center;
+    align-items: baseline;
     color: var(--text--color);
     letter-spacing: 0.03em;
     line-height: 1.71;
@@ -802,11 +802,12 @@ h1,h2,h3,p{
     background-size: contain;
     background-origin: border-box;
     border-color: var(--link--color);
-
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
 }
 
 .modal__license{
     color: var(--link--color);
+    margin-left: 5px;
 }
 .modal__submit{
    display: block;
