@@ -273,13 +273,16 @@ h1,h2,h3,p{
     width: 100%;
 }
 .servise__item__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     bottom: 0;
     left: 0;
     background: rgba(47, 48, 58, 0.8);
-    padding: 27px 0;
+    height: 70px;
     width: 100%;
-    text-align: center;
+    
 }
 .servise__item__head{
     font-size: 16px;
@@ -436,7 +439,7 @@ h1,h2,h3,p{
 }
 
 .address{
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .address__list__item:not(:last-child){
@@ -598,7 +601,7 @@ h1,h2,h3,p{
     margin-right: 0;
 }
 
-.portfolio_item--active {
+.portfolio__item--active {
     width: 100%;
     transition: box-shadow 250ms var(--cubic--bezier);
 }
@@ -674,7 +677,7 @@ h1,h2,h3,p{
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity 250ms var(--cubic--bezier);
+    transition: opacity 1000ms var(--cubic--bezier);
     
 }
 .backdrop.is-hidden {
@@ -695,7 +698,7 @@ h1,h2,h3,p{
     width: 528px;
     height: 581px;
     background: var(--white--color);
-    transition: transform 1000ms var(--cubic--bezier);
+    transition: transform 1000ms var(--cubic--bezier), opacity 1000ms var(--cubic--bezier);
     padding: 40px;
 }
 
@@ -796,7 +799,7 @@ h1,h2,h3,p{
 }
 .modal__checkbox__label{
     display: flex;
-    align-items: baseline;
+    align-items: center;
     color: var(--text--color);
     letter-spacing: 0.03em;
     line-height: 1.71;
@@ -805,7 +808,7 @@ h1,h2,h3,p{
 .icon__checkbox{
     display: inline-block;
     width: 16px;
-    height: 15px;
+    height: 16px;
     border: 2px solid #000;
     border-radius: 2px;
     margin-right: 7px;
