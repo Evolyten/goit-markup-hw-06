@@ -118,7 +118,8 @@ h1,h2,h3,p{
 .nav__link:focus{
     color: var(--link--color);
 }
-.nav__list__item:hover .nav__link::after
+.nav__link:hover::after,
+.nav__link:focus::after
  {
     transform: scaleX(1);
     transition: transform 500ms var(--cubic--bezier);
